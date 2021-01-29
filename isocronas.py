@@ -1,33 +1,35 @@
 import math
 
-def uzt(Tv,Zr):
+
+def uzt(Tv, Zr):
     # Configuration
-    n = 1000 #number of iterations
-    Uzt = 1 # initial value of Uzt
+    n = 1000  # number of iterations
+    Uzt = 1  # initial value of Uzt
 
     for m in range(n):
-        M = (math.pi/2) * (2 * m + 1)
-        t = (pow(-1,m) * 2 / M) * (math.cos(M * Zr)) * (math.exp(-(Tv * pow(M,2))))
+        M = (math.pi / 2) * (2 * m + 1)
+        t = (pow(-1, m) * 2 / M) * (math.cos(M * Zr)) * (math.exp(-(Tv * pow(M, 2))))
         Uzt = Uzt - t
 
     return Uzt
 
-def tvt(Zr,Uz):
+
+def tvt(Zr, Uz):
     # Configuración
-    tol = 0.00000001 #Tolerancia con el resultado
-    maxCiclos = 1000 #Número máximo de ciclos permitidos
+    tol = 0.00000001  # Tolerancia con el resultado
+    maxCiclos = 1000  # Número máximo de ciclos permitidos
 
     # Valores iniciales de Tv
     TV0 = 0.001
     TV1 = 15
     TVi = (TV0 + TV1) / 2
 
-    i = 0 # Inicializa el contador de ciclos en 0
+    i = 0  # Inicializa el contador de ciclos en 0
     while True:
         i = i + 1
         UZi = uzt(TVi, Zr)
 
-        if abs(UZi - Uz) / Uz < tol:
+        if abs(UZi - Uz) < tol:
             break
         elif i > maxCiclos:
             TVi = -1
@@ -44,10 +46,11 @@ def tvt(Zr,Uz):
 
     return TVi
 
-def zrt(Tv,Uz):
+
+def zrt(Tv, Uz):
     # Configuración
-    tol = 0.00000001 #Tolerancia con el resultado
-    maxCiclos = 1000 #Número máximo de ciclos permitidos
+    tol = 0.00000001  # Tolerancia con el resultado
+    maxCiclos = 1000  # Número máximo de ciclos permitidos
 
     # Valores iniciales de Zr
     ZR0 = 0
@@ -59,10 +62,13 @@ def zrt(Tv,Uz):
         i = i + 1
         UZi = uzt(Tv, ZRi)
 
-        if abs(UZi - Uz) / Uz < tol:
+        if abs(UZi - Uz) < tol:
             break
         elif i > maxCiclos:
             ZRi = -1
+            break
+        elif ZRi < 0.000001:
+            ZRi = 0
             break
         elif Uz >= UZi:
             ZR0 = ZRi
