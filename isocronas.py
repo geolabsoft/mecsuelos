@@ -11,7 +11,7 @@ def uzt(Tv, Zr):
         t = (pow(-1, m) * 2 / M) * (math.cos(M * Zr)) * (math.exp(-(Tv * pow(M, 2))))
         Uzt = Uzt - t
 
-    return Uzt
+    return round(Uzt, 5)
 
 
 def tvt(Zr, Uz):
@@ -44,7 +44,7 @@ def tvt(Zr, Uz):
             TVi = -1
             break
 
-    return TVi
+    return round(TVi, 5)
 
 
 def zrt(Tv, Uz):
@@ -80,4 +80,4 @@ def zrt(Tv, Uz):
             ZRi = -1
             break
 
-    return ZRi
+    return round(ZRi, 5)
