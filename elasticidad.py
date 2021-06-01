@@ -9,7 +9,8 @@ def IqRec(m, n):
         Iq 1 / (4 * math.pi) * (((2 * m * n * math.sqrt(m**2 + n**2 + 1)) / (m**2 + n**2 + m**2 * n**2 + 1)) * ((
             m**2 + n**2 + 2) / (m**2 + n**2 + 1)) + math.atan((2 * m * n * math.sqrt(m**2 + n**2 + 1) / (m**2 + n**2 -
             m**2 * n**2 + 1))))
-    return round(Iq, 4
+    
+    return round(Iq, 4)
 
 def inc_sigma_puntual(Q, z, R):
     return (Q * 3 * z**3) / (2 * math.pi * R**5)
