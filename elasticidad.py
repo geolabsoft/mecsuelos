@@ -13,11 +13,17 @@ def IqRec(m, n):
     return round(Iq, 4)
 
 def inc_sigma_puntual(Q, z, R):
-    return (Q * 3 * z**3) / (2 * math.pi * R**5)
+    try:
+        return (Q * 3 * z**3) / (2 * math.pi * R**5)
+    except ZeroDivisionError:
+        return math.inf
 
 def inc_sigma_lineal(Q, z, x):
     b = math.sqrt(x**2 + z**2)
-    return (2 * Q * z**3) / (math.pi * b**4)
+    try:
+        return (2 * Q * z**3) / (math.pi * b**4)
+    except ZeroDivisionError:
+        return math.inf
 
 def inc_sigma_faja_uniforme(q, alpha, beta, radianes=False):
     if not radianes:
