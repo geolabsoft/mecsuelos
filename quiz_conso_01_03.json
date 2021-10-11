@@ -1,0 +1,73 @@
+{
+    "title": null,
+    "description": null,
+    "language": "esp",
+    "questions": [
+        {
+            "question_type": "multiple_choice",
+            "statement": "Cu\u00e1nto vale la tensi\u00f3n total al incio de un escal\u00f3n de carga?",
+            "options": [
+                "Lo mismo que el incremento de carga que apliquemos en el escal\u00f3n",
+                "Es nula",
+                "No se puede calcular",
+                "El valor de toda la carga que tengamos aplicada a la muestra"
+            ],
+            "solution": "El valor de toda la carga que tengamos aplicada a la muestra"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "Cu\u00e1nto vale la tensi\u00f3n total al final de un escal\u00f3n de carga?",
+            "options": [
+                "Lo mismo que el incremento de carga que apliquemos en el escal\u00f3n",
+                "Es nula",
+                "No se puede calcular",
+                "El valor de toda la carga que tengamos aplicada a la muestra"
+            ],
+            "solution": "El valor de toda la carga que tengamos aplicada a la muestra"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "\u00bfCu\u00e1l ser\u00e1 la tensi\u00f3n efectiva al incio de un escal\u00f3n de carga",
+            "options": [
+                "La misma que al final del escal\u00f3n anterior",
+                "La tensi\u00f3n efectiva final del escal\u00f3n anterior m\u00e1s la carga aplicada en el escal\u00f3n",
+                "La tensi\u00f3n efectiva al inicio de todos los escalones es 0",
+                "La presi\u00f3n de poro al final del escal\u00f3n anterior"
+            ],
+            "solution": "La misma que al final del escal\u00f3n anterior"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "\u00bfCu\u00e1l ser\u00e1 la tensi\u00f3n efectiva al final de un escal\u00f3n de carga (t = infinito)",
+            "options": [
+                "La misma que al final del escal\u00f3n anterior",
+                "La tensi\u00f3n efectiva final del escal\u00f3n anterior m\u00e1s la carga aplicada en el escal\u00f3n",
+                "La tensi\u00f3n efectiva al inicio de todos los escalones es 0",
+                "La presi\u00f3n de poro al final del escal\u00f3n anterior"
+            ],
+            "solution": "La tensi\u00f3n efectiva final del escal\u00f3n anterior m\u00e1s la carga aplicada en el escal\u00f3n"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "\u00bfCu\u00e1nto vale la presi\u00f3n de poro al incio de un escal\u00f3n de carga?",
+            "options": [
+                "Lo mismo que el incremento de carga que apliquemos en el escal\u00f3n",
+                "Es nula",
+                "No se puede calcular",
+                "El valor de toda la carga que tengamos aplicada a la muestra"
+            ],
+            "solution": "Lo mismo que el incremento de carga que apliquemos en el escal\u00f3n"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "\u00bfCu\u00e1nto vale la presi\u00f3n de poro al final de un escal\u00f3n de carga? (t = infinito)",
+            "options": [
+                "Lo mismo que el incremento de carga que apliquemos en el escal\u00f3n",
+                "Es nula",
+                "No se puede calcular",
+                "El valor de toda la carga que tengamos aplicada a la muestra"
+            ],
+            "solution": "Es nula"
+        }
+    ]
+}
