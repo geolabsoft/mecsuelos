@@ -1,0 +1,40 @@
+{
+    "title": null,
+    "description": null,
+    "language": "esp",
+    "questions": [
+        {
+            "question_type": "multiple_choice",
+            "statement": "\u00bfEn qu\u00e9 tipo de suelos se produce la consolidaci\u00f3n?",
+            "options": [
+                "Arenas",
+                "Gravas",
+                "Arcillas",
+                "Todos"
+            ],
+            "solution": "Arcillas"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "Cuando aplicamos una carga en un suelo arcilloso saturado, \u00bfqu\u00e9 material recibe inicialmente la carga?",
+            "options": [
+                "Suelo",
+                "Agua",
+                "Aire",
+                "Ambos"
+            ],
+            "solution": "Agua"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "\u00bfQu\u00e9 fase del terreno cambia de volumen durante la consolidaci\u00f3n?",
+            "options": [
+                "S\u00f3lida",
+                "L\u00edquida",
+                "Gaseosa",
+                "Todas"
+            ],
+            "solution": "L\u00edquida"
+        }
+    ]
+}
