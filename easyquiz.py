@@ -84,8 +84,10 @@ class QuizQuestion():
         if options and self.check_options(options):
             self._options = options
             self._alternatives = widgets.RadioButtons(options=options,
-                                                      description='',
-                                                      disabled=False)
+                                description='',
+                                disabled=False,
+                                layout=widgets.Layout(width='100%'))
+                                
             self.options_status = 'OK'
         else:
             self._options = None
