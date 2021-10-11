@@ -1,0 +1,62 @@
+{
+    "title": null,
+    "description": null,
+    "language": "esp",
+    "questions": [
+        {
+            "question_type": "multiple_choice",
+            "statement": "\u00bfQu\u00e9 significa compresi\u00f3n confinada?",
+            "options": [
+                "El terreno se comprime solo verticalmente",
+                "El terreno se comprime solo horizontalmente",
+                "La deformaci\u00f3n vertical del terreno es nula",
+                "La deformaci\u00f3n horizontal del terreno es nula"
+            ],
+            "solution": "La deformaci\u00f3n horizontal del terreno es nula"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "\u00bfQu\u00e9 ensayo utilizamos para estudiar la compresi\u00f3n confinada?",
+            "options": [
+                "Triaxial",
+                "Corte directo",
+                "Ed\u00f3metro",
+                "Cono de arena"
+            ],
+            "solution": "Ed\u00f3metro"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "\u00bfQu\u00e9 tipo de suelos se ensayan habitualmente en el ed\u00f3metro?",
+            "options": [
+                "Suelos finos",
+                "Suelos granulares",
+                "Roca",
+                "Cualquiera"
+            ],
+            "solution": "Suelos finos"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "\u00bfCu\u00e1ntas curvas edom\u00e9tricas se obtienen de un ensayo edom\u00e9trico?",
+            "options": [
+                "Ninguna",
+                "Una",
+                "Dos",
+                "Una por escal\u00f3n"
+            ],
+            "solution": "Una"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "\u00bfCu\u00e1ntas curvas de consolidaci\u00f3n se obtienen de un ensayo edom\u00e9trico?",
+            "options": [
+                "Ninguna",
+                "Una",
+                "Dos",
+                "Una por escal\u00f3n"
+            ],
+            "solution": "Una por escal\u00f3n"
+        }
+    ]
+}
