@@ -1,0 +1,82 @@
+{
+    "title": null,
+    "description": null,
+    "language": "esp",
+    "questions": [
+        {
+            "question_type": "multiple_choice",
+            "statement": "\u00bfQu\u00e9 podemos obtener usando la curva edom\u00e9trica?",
+            "options": [
+                "La evoluci\u00f3n de los asientos con el tiempo",
+                "El valor del asiento justo despu\u00e9s de aplicar la carga",
+                "El valor del asiento al final del proceso de consolidaci\u00f3n",
+                "La resitencia del terreno"
+            ],
+            "solution": "El valor del asiento al final del proceso de consolidaci\u00f3n"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "\u00bfEn qu\u00e9 ejes se dibuja habitualmente la curva edom\u00e9trica",
+            "options": [
+                "Tensi\u00f3n efectiva en escala logar\u00edtmica en abscisas e \u00edndice de poros en escala logar\u00edtmica en ordenadas",
+                "Tensi\u00f3n efectiva en escala natual en abscisas e \u00edndice de poros en escala logar\u00edtmica en ordenadas",
+                "Tensi\u00f3n efectiva en escala natual en abscisas e \u00edndice de poros en escala natural en ordenadas",
+                "Tensi\u00f3n efectiva en escala logar\u00edtmica en abscisas e \u00edndice de poros en escala natural en ordenadas"
+            ],
+            "solution": "Tensi\u00f3n efectiva en escala logar\u00edtmica en abscisas e \u00edndice de poros en escala natural en ordenadas"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "Si aplicamos en el terreno una carga mayor que la presi\u00f3n de preconsolidaci\u00f3n:",
+            "options": [
+                "El terreno se comportar\u00e1 seg\u00fan la rama de compresi\u00f3n noval",
+                "El terreno no se deformar\u00e1",
+                "El terreno se comportar\u00e1 seg\u00fan la rama de recarga",
+                "No podemos calcular la deformaci\u00f3n del terreno"
+            ],
+            "solution": "El terreno se comportar\u00e1 seg\u00fan la rama de compresi\u00f3n noval"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "Si aplicamos en el terreno una carga menor que la presi\u00f3n de preconsolidaci\u00f3n:",
+            "options": [
+                "El terreno se comportar\u00e1 seg\u00fan la rama de compresi\u00f3n noval",
+                "El terreno no se deformar\u00e1",
+                "El terreno se comportar\u00e1 seg\u00fan la rama de recarga",
+                "No podemos calcular la deformaci\u00f3n del terreno"
+            ],
+            "solution": "El terreno se comportar\u00e1 seg\u00fan la rama de recarga"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "Verdadero o falso: La rigidez de los suelos disminuye al incrementar la carga aplicada",
+            "options": [
+                "Verdadero",
+                "Falso"
+            ],
+            "solution": "Falso"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "\u00bfC\u00f3mo se llama el par\u00e1metro que se utiliza para caracterizar la compresi\u00f3n noval",
+            "options": [
+                "\u00cdndice de entumecimiento (Cs)",
+                "\u00cdndice de compresi\u00f3n (Cc)",
+                "M\u00f3dulo edom\u00e9trico (Em)",
+                "M\u00f3dulo de elasticidad (E)"
+            ],
+            "solution": "\u00cdndice de compresi\u00f3n (Cc)"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "\u00bfC\u00f3mo se llama el par\u00e1metro que se utiliza para caracterizar la recarga/descarga",
+            "options": [
+                "\u00cdndice de entumecimiento (Cs)",
+                "\u00cdndice de compresi\u00f3n (Cc)",
+                "M\u00f3dulo edom\u00e9trico (Em)",
+                "M\u00f3dulo de elasticidad (E)"
+            ],
+            "solution": "\u00cdndice de entumecimiento (Cs)"
+        }
+    ]
+}
