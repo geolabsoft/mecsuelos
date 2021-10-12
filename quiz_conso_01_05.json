@@ -1,0 +1,49 @@
+{
+    "title": null,
+    "description": null,
+    "language": "esp",
+    "questions": [
+        {
+            "question_type": "multiple_choice",
+            "statement": "\u00bfQu\u00e9 efecto produce la alteraci\u00f3n de las muestras antes del ensayo en el \u00edndice de poros de la rama de compresi\u00f3n noval",
+            "options": [
+                "El valor del \u00edndice de poros que se obtiene es mayor cuanto m\u00e1s se altere la muestra",
+                "El valor del \u00edndice de poros que se obtiene es menor cuanto m\u00e1s se altere la muestra",
+                "El valor del \u00edndice de poros que se obtiene no se ve afectado por la alteraci\u00f3n de la muestra",
+                "El cambio depende del tipo de suelo, no se puede conocer antes de la relizaci\u00f3n del ensayo"
+            ],
+            "solution": "El valor del \u00edndice de poros que se obtiene es menor cuanto m\u00e1s se altere la muestra"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "\u00bfEn qu\u00e9 afecta la alteraci\u00f3n de las muestra en el estudio del historial tensional",
+            "options": [
+                "En muestras alteradas, aunque sea ligeramente, no se puede estudiar el historial tensional",
+                "La alteraci\u00f3n no afecta en nada al estudio del historial de tensiones",
+                "En ensayos sobre muestras alteradas no puede verse directamente la presi\u00f3n de preconsolidaci\u00f3n",
+                "En ensayos sobre muestras alteradas puede verse directamente la presi\u00f3n de preconsolidaci\u00f3n"
+            ],
+            "solution": "En ensayos sobre muestras alteradas no puede verse directamente la presi\u00f3n de preconsolidaci\u00f3n"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "\u00bfQu\u00e9 efecto produce la alteraci\u00f3n en la rama de descarga",
+            "options": [
+                "El mismo que en la rama de compresi\u00f3n noval",
+                "La alteraci\u00f3n no produce ning\u00fan efecto en la rama de descarga"
+            ],
+            "solution": "La alteraci\u00f3n no produce ning\u00fan efecto en la rama de descarga"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "\u00bfQu\u00e9 m\u00e9todos podemos usar para corregir las curvas edom\u00e9tricas de laboratorio",
+            "options": [
+                "Casagrande y Schmertmann",
+                "Casagrande y Taylor",
+                "Proctor y Schmertmann",
+                "Schmertmann y Darcy"
+            ],
+            "solution": "Casagrande y Schmertmann"
+        }
+    ]
+}
