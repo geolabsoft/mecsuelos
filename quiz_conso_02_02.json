@@ -1,0 +1,47 @@
+{
+    "title": null,
+    "description": null,
+    "language": "esp",
+    "questions": [
+        {
+            "question_type": "multiple_choice",
+            "statement": "\u00bfQu\u00e9 expresa el grado de consolidaci\u00f3n?",
+            "options": [
+                "El valor de la tensi\u00f3n efectiva en un determinado momento durante la consolidaci\u00f3n",
+                "La cantidad de presi\u00f3n de poro que ya se ha disipado en un momento determinado",
+                "La cantidad de presi\u00f3n de poro que todav\u00eda no se ha disipado en un momento determinado",
+                "La magnitud del asiento que se ha producido en un determinado momento",
+                "La magnitud del asiento que falta por producirse en un determinado momento"
+            ],
+            "solution": "La cantidad de presi\u00f3n de poro que ya se ha disipado en un momento determinado"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "El grado de consolidaci\u00f3n es constante para todo el estrato arcilloso en un tiempo determinado",
+            "options": [
+                "Verdadero",
+                "Falso"
+            ],
+            "solution": "Falso"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "Para un mismo punto del terreno el grado de consolidaci\u00f3n aumenta con el tiempo",
+            "options": [
+                "Verdadero",
+                "Falso"
+            ],
+            "solution": "Verdadero"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "En el sistema internacional, \u00bfen qu\u00e9 unidades se mide el coeficiente de consolidaci\u00f3n?",
+            "options": [
+                "m\u00b2 / s",
+                "m / s",
+                "m / s\u00b2"
+            ],
+            "solution": "m\u00b2 / s"
+        }
+    ]
+}
