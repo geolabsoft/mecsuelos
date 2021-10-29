@@ -47,6 +47,7 @@ def crea_puntos(n=50, p=100):
 def c_conso(puntos = {}, teorica = False, menor_60 = False, mayor_60 = False, escala_logaritmica = True):
 
     out2 = plt.figure()
+    out2.set_size_inches(15, 9)
 
     puntos_teorica = puntos['teorica']
     puntos_menor_60 = puntos['menor_60']
