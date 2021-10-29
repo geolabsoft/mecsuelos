@@ -85,7 +85,7 @@ def zrt(Tv, Uz):
     return round(ZRi, 5)
 
 
-def uz_int(Tv, Zr, grafica=True):
+def uz_int(iso_std, Tv, Zr, grafica=True):
     """ Función para el uso de interact para el cálculo interactivo de grado de
     consolidación. Además de obtener el grado de consolidación, dibuja las
     isocronas estandar y la correspondiente a los valores de Tv y Zr que se
@@ -95,7 +95,9 @@ def uz_int(Tv, Zr, grafica=True):
     # Obtiene el grado de consolidación usando isocronas.py
     Uz = uzt(Tv, Zr)
 
-    isoSTD, zrVTot, zrV = calcula_isocronas_standard()
+    isoSTD = iso_std[0]
+    zrVTot = iso_std[1]
+    zrV = iso_std[2]
 
     if grafica:
         # Crea una nueva figura
@@ -154,5 +156,7 @@ def calcula_isocronas_standard():
         uzVTot = np.concatenate((np.flip(uzV), np.delete(uzV, 0)))
         isoSTD.append(uzVTot)
 
-    return isoSTD, zrVTot, zrV
+    iso_std = [isoSTD, zrVTot, zrV] 
+
+    return iso_std
 
