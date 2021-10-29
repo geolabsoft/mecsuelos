@@ -85,7 +85,7 @@ def zrt(Tv, Uz):
     return round(ZRi, 5)
 
 
-def uz_int(iso_std, Tv, Zr, grafica=True):
+def uz_int(iso_std = [], Tv = 0.5, Zr = 0, grafica=True):
     """ Función para el uso de interact para el cálculo interactivo de grado de
     consolidación. Además de obtener el grado de consolidación, dibuja las
     isocronas estandar y la correspondiente a los valores de Tv y Zr que se
