@@ -1,0 +1,36 @@
+{
+    "title": null,
+    "description": null,
+    "language": "esp",
+    "questions": [
+        {
+            "question_type": "multiple_choice",
+            "statement": "La sobreconsolidaci\u00f3n que se produce por la erosi\u00f3n parcial genera una RSC constante en todo el terreno",
+            "options": [
+                "Verdadero",
+                "Falso"
+            ],
+            "solution": "Falso"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "\u00bfQu\u00e9 proceso genera la sobreconsolidaci\u00f3n por envejecimiento",
+            "options": [
+                "Consolidaci\u00f3n secundaria",
+                "Filtraci\u00f3n de agua",
+                "Incremento de la tensi\u00f3n efectiva",
+                "Consolidaci\u00f3n primaria"
+            ],
+            "solution": "Consolidaci\u00f3n secundaria"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "La sobreconsolidaci\u00f3n por precarga es un proceso natural que se produce en el terreno",
+            "options": [
+                "Verdadero",
+                "Falso"
+            ],
+            "solution": "Falso"
+        }
+    ]
+}
