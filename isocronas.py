@@ -1,5 +1,6 @@
 import math
 import matplotlib.pyplot as plt
+import numpy as np
 
 
 def uzt(Tv, Zr):
@@ -84,55 +85,72 @@ def zrt(Tv, Uz):
     return round(ZRi, 5)
     
 def uz_int(Tv,Zr,grafica=True):
-  """ Función para el uso de interact para el cálculo interactivo de grado de
-  consolidación. Además de obtener el grado de consolidación, dibuja las
-  isocronas estandar y la correspondiente a los valores de Tv y Zr que se
-  proporcionan como parámetros.
-  La variable [grafica] permite seleccionar si se obtiene o no la gráfica."""
+    """ Función para el uso de interact para el cálculo interactivo de grado de
+    consolidación. Además de obtener el grado de consolidación, dibuja las
+    isocronas estandar y la correspondiente a los valores de Tv y Zr que se
+    proporcionan como parámetros.
+    La variable [grafica] permite seleccionar si se obtiene o no la gráfica."""
 
-  # Obtiene el grado de consolidación usando isocronas.py
-  Uz = uzt(Tv,Zr)
+    # Obtiene el grado de consolidación usando isocronas.py
+    Uz = uzt(Tv,Zr)
 
-  if grafica:
-    # Crea una nueva figura
-    out = plt.figure()
+    isoSTD, zrVTot = calcula_isocronas_standard()
 
-    # Dibuja las isocronas estandar
-    for uzVTot in isoSTD:
-      plt.plot(uzVTot,zrVTot,'grey',linewidth=0.5)
+    if grafica:
+        # Crea una nueva figura
+        out = plt.figure()
 
-    # Dibuja la isocrona correspondiente al Tv proporcionado
-    uzV = []
-    for i in zrV:
-      uzV.append(iso.uzt(Tv,i))
-    uzVTot = np.concatenate((np.flip(uzV),np.delete(uzV,0)))
-    plt.plot(uzVTot,zrVTot,'b')
+        # Dibuja las isocronas estandar
+        for uzVTot in isoSTD:
+            plt.plot(uzVTot,zrVTot,'grey',linewidth=0.5)
+
+        # Dibuja la isocrona correspondiente al Tv proporcionado
+        uzV = []
+        for i in zrV:
+            uzV.append(iso.uzt(Tv,i))
+        uzVTot = np.concatenate((np.flip(uzV),np.delete(uzV,0)))
+        plt.plot(uzVTot,zrVTot,'b')
   
-    # Dibuja el punto que se está calculando
-    plt.plot(Uz,Zr,'ro')
-    plt.plot([0,Uz],[Zr,Zr],'r--',linewidth=0.75)
-    plt.plot([Uz,Uz],[-1,Zr],'r--',linewidth=0.75)
+        # Dibuja el punto que se está calculando
+        plt.plot(Uz,Zr,'ro')
+        plt.plot([0,Uz],[Zr,Zr],'r--',linewidth=0.75)
+        plt.plot([Uz,Uz],[-1, Zr],'r--',linewidth=0.75)
 
-    # Configura la apariencia del gráfico
-    plt.title("Isocronas\nTv = " + str(round(Tv,5)) + " / Zr = " + 
+       # Configura la apariencia del gráfico
+        plt.title("Isocronas\nTv = " + str(round(Tv,5)) + " / Zr = " + 
               str(round(Zr,5)) + " -> Uz = " + str(round(Uz,5)))
-    plt.xlim(0,1)
-    plt.ylim(-1,1)
-    plt.xlabel("Uz")
-    plt.ylabel("Zr")
-    plt.grid(True)
+        plt.xlim(0,1)
+        plt.ylim(-1,1)
+        plt.xlabel("Uz")
+        plt.ylabel("Zr")
+        plt.grid(True)
 
-    print("------------------------------------------------")
-    print("               Resultado gráfico")
-    print("------------------------------------------------")
+        print("------------------------------------------------")
+        print("               Resultado gráfico")
+        print("------------------------------------------------")
     
-    # Muestra la gráfica
-    plt.show()
+        # Muestra la gráfica
+        plt.show()
 
-  print("-----------------------------------------------")
-  print("              Resultado numérico")
-  print("-----------------------------------------------")
-  print("")
-  print("Tv = " + str(round(Tv,5)) + " / Zr = " + 
+    print("-----------------------------------------------")
+    print("              Resultado numérico")
+    print("-----------------------------------------------")
+    print("")
+    print("Tv = " + str(round(Tv,5)) + " / Zr = " + 
               str(round(Zr,5)) + " -> Uz = " + str(round(Uz,5)))
+
+
+def calcula_isocronas_standard():
+    tvV = [0.05,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1,1.1]
+    zrV = np.linspace(0,1,50)
+    zrVTot = np.concatenate((0-np.flip(zrV),np.delete(zrV,0)))
+    isoSTD = []
+    for j in tvV:
+        uzV = []
+        for i in zrV:
+            uzV.append(iso.uzt(j,i))
+        uzVTot = np.concatenate((np.flip(uzV),np.delete(uzV,0)))
+        isoSTD.append(uzVTot)
+
+    return isoSTD, zrVTot
 
