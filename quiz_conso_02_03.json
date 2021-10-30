@@ -1,0 +1,47 @@
+{
+    "title": null,
+    "description": null,
+    "language": "esp",
+    "questions": [
+        {
+            "question_type": "multiple_choice",
+            "statement": "El grado de consolidaci\u00f3n medio en un instante determinado depende de la profundidad del punto que estemos estudiando",
+            "options": [
+                "Verdadero",
+                "Falso"
+            ],
+            "solution": "Falso"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "\u00bfQu\u00e9 parametro obtenemos de cada curva de consolidaci\u00f3n?",
+            "options": [
+                "\u00cdndice de compresi\u00f3n",
+                "\u00cdndice de entumecimiento",
+                "M\u00f3dulo edom\u00e9trico",
+                "Coeficiente de consolidaci\u00f3n"
+            ],
+            "solution": "Coeficiente de consolidaci\u00f3n"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "\u00bfQu\u00e9 defectos tenemos que corregir de las curvas de consolidaci\u00f3n de laboratorio?",
+            "options": [
+                "Asiento inicial y consolidaci\u00f3n secundaria",
+                "Asiente final y consolidaci\u00f3n secundaria",
+                "Asiento incial y consolidaci\u00f3n primaria",
+                "Asiento final y consolidaci\u00f3n primaria"
+            ],
+            "solution": "Asiento inicial y consolidaci\u00f3n secundaria"
+        },
+        {
+            "question_type": "multiple_choice",
+            "statement": "La consolidaci\u00f3n secundaria es mucho m\u00e1s evidente en los ensayos que en la realidad",
+            "options": [
+                "Verdadero",
+                "Falso"
+            ],
+            "solution": "Verdadero"
+        }
+    ]
+}
