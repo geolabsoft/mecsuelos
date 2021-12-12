@@ -7,10 +7,10 @@ from matplotlib.ticker import (MultipleLocator)
 
 
 def load_fit_parameters():
-    long_term = pd.read_excel('taylor_chart_fit.xlsx', sheet_name='long_term')
-    long_term_inverse =  pd.read_excel('taylor_chart_fit.xlsx',
-                                       sheet_name='long_term_inverse')
-    short_term = pd.read_excel('taylor_chart_fit.xlsx', sheet_name='short_term')
+    xlsx_url = 'https://github.com/geolabsoft/mecsuelos/blob/main/taylor/taylor_chart_fit.xlsx?raw=true'
+    long_term = pd.read_excel(xlsx_url, sheet_name='long_term')
+    long_term_inverse =  pd.read_excel(xlsx_url, sheet_name='long_term_inverse')
+    short_term = pd.read_excel(xlsx_url, sheet_name='short_term')
     
     return long_term, long_term_inverse, short_term
 
