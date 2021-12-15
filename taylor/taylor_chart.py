@@ -256,7 +256,7 @@ def plot_taylor_short_term(fit_data, ax, color='k', legend=False):
 
     ax.set(title=r'Ábaco de Taylor ($\phi\neq0$)',
            xlabel=r'Inclinación del talud , $\beta$ ($\degree$)',
-           ylabel=r'Número de estabilidad, $N_s = \frac{c}{\gamma·H·}$',
+           ylabel=r'Número de estabilidad, $N_s = \frac{\gamma·H}{c}$',
            xlim=[90, 0],
            ylim=[3, 11])
 
