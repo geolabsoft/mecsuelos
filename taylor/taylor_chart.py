@@ -3,11 +3,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.ticker import (MultipleLocator)
 
-# Parameter loading
 
-
-def load_fit_parameters():
-    xlsx_url = 'https://github.com/geolabsoft/mecsuelos/blob/main/taylor/taylor_chart_fit.xlsx?raw=true'
+def load_fit_parameters(exp=False):
+    
+    if exp:
+        xlsx_url = 'https://github.com/geolabsoft/mecsuelos/blob/main/taylor/taylor_chart_fit_exp.xlsx?raw=true'
+    else:
+        xlsx_url = 'https://github.com/geolabsoft/mecsuelos/blob/main/taylor/taylor_chart_fit.xlsx?raw=true'
+        
     long_term = pd.read_excel(xlsx_url, sheet_name='long_term')
     long_term_inverse =  pd.read_excel(xlsx_url, sheet_name='long_term_inverse')
     short_term = pd.read_excel(xlsx_url, sheet_name='short_term')
